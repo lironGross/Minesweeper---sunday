@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body onload="init()">
+    <div>
+        <h1 class="smiley">Mine Sweeper<span> </span></h1>
+        <h3>Choose board size:</h3>
+        <div class="level">  <br>
+           
+            <button data-level="16" class="buttons" onclick="chooseLevel(this)"> Beginner</button>
+            <button data-level="64" class="buttons" onclick="chooseLevel(this)"> Medium </button>
+            <button data-level="144" class="buttons" onclick="chooseLevel(this)"> Expert </button>
+        </div>
+            <table>
+                <div oncontextmenu="myFunction()" contextmenu="mymenu">
+                <tbody class="board"></tbody>
+                <menu type="context" id="mymenu">
+                    <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png"></menuitem>
+                </table>
+                
+                <h1 class="result"><span> </span></h1>
+
+             
+            <p id="timer"></p> 
+    
+       
+            
+        <script src="js/utils.js"></script>
+        <script src="js/js.js"></script>
+    </div>
+</body>
+
+</html>
